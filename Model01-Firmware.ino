@@ -50,6 +50,8 @@
 // Support for an LED mode that lights up the keys as you press them
 #include "Kaleidoscope-LED-Stalker.h"
 
+#include "Kaleidoscope-Heatmap.h"
+
 // Support for an LED mode that prints the keys you press in letters 4px high
 #include "Kaleidoscope-LED-AlphaSquare.h"
 
@@ -294,7 +296,7 @@ void setup() {
 
     // The AlphaSquare effect prints each character you type, using your
     // keyboard's LEDs as a display
-    &AlphaSquareEffect,
+    &HeatmapEffect,
 
     // The stalker effect lights up the keys you've pressed recently
     &StalkerEffect,
